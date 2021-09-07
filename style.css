@@ -76,8 +76,10 @@ main::after {
 
 .mobile {
   position: relative;
-  width: 16.4vw;
-  height: 33vw;
+  /* width: 16.4vw; */
+  width: 14.76em;
+  /* height: 33vw; */
+  height: 29.7em;
   background-color: var(--color-white);
   top: 10.2vw;
   left: 23.6vw;
