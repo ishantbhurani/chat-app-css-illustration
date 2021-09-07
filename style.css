@@ -48,6 +48,7 @@ main::after {
   position: absolute;
   width: 33.11vw;
   height: 46.22vw;
+  z-index: -1;
 }
 
 main::before {
@@ -71,4 +72,118 @@ main::after {
   );
   border-radius: 20em 20em 0 0;
   opacity: 0.1;
+}
+
+.mobile {
+  position: relative;
+  width: 16.4vw;
+  height: 33vw;
+  background-color: var(--color-white);
+  top: 10.2vw;
+  left: 23.6vw;
+  border-radius: 1.8em;
+  box-shadow: 0.3em 0.8em 3em -0.8em var(--color-dark-grayish-violet);
+  padding: 0.65em;
+  overflow: hidden;
+}
+
+.speaker {
+  position: absolute;
+  background: var(--color-white);
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
+  height: 1.7em;
+  width: 7.6em;
+  border-radius: 5em;
+}
+
+.action-bar {
+  height: 4em;
+  border-radius: 1.2em 1.2em 0.2em 0.2em;
+  background: linear-gradient(
+    to right,
+    var(--color-light-violet),
+    var(--color-light-magenta)
+  );
+  padding: 2em 1em 1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5em;
+  box-shadow: 0 6px 10px -4px #ccc;
+}
+
+.back-arrow-btn,
+.back-arrow-btn::before {
+  width: 2px;
+  height: 5px;
+  background-color: var(--color-white);
+}
+
+.back-arrow-btn {
+  position: relative;
+  transform: rotate(30deg);
+  top: -2px;
+}
+
+.back-arrow-btn::before {
+  content: "";
+  position: absolute;
+  transform: rotate(110deg);
+  top: 3px;
+  left: 2px;
+}
+
+.user {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5em;
+}
+
+.user-img {
+  width: 1.35em;
+  height: 1.35em;
+  border-radius: 50%;
+  border: 1px solid var(--color-white);
+}
+
+.user-name {
+  color: var(--color-white);
+  font-size: 0.632rem;
+  font-weight: bold;
+  margin-bottom: 1px;
+}
+
+.user-status {
+  color: var(--color-light-magenta);
+  font-size: 0.47rem;
+}
+
+.menu-btn,
+.menu-btn::before,
+.menu-btn::after {
+  width: 2px;
+  height: 2px;
+  border-radius: 50%;
+  background-color: var(--color-white);
+}
+
+.menu-btn {
+  position: relative;
+}
+
+.menu-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 3px;
+}
+
+.menu-btn::after {
+  content: "";
+  position: absolute;
+  top: 3px;
 }
