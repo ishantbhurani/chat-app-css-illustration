@@ -23,16 +23,63 @@
     <main>
       <div class="mobile">
         <div class="speaker"></div>
-        <div class="action-bar">
-          <div class="back-arrow-btn"></div>
-          <div class="user">
-            <img src="./images/avatar.jpg" alt="user image" class="user-img" />
-            <div class="user-info">
-              <p class="user-name">Samuel Green</p>
-              <p class="user-status">Available to Walk</p>
+        <div class="app">
+          <div class="action-bar">
+            <div class="back-arrow-btn"></div>
+            <div class="user">
+              <img
+                src="./images/avatar.jpg"
+                alt="user image"
+                class="user-img"
+              />
+              <div class="user-info">
+                <p class="user-name">Samuel Green</p>
+                <p class="user-status">Available to Walk</p>
+              </div>
             </div>
+            <div class="menu-btn"></div>
           </div>
-          <div class="menu-btn"></div>
+          <div class="chat">
+            <p class="received">That sounds great. I'd be happy with that.</p>
+            <p class="received">
+              Could you send over some pictures of your dog, please?
+            </p>
+            <span class="spacer"></span>
+            <div class="sent-img">
+              <img src="./images/dog-image-1.jpg" alt="dog image 1" />
+              <img src="./images/dog-image-2.jpg" alt="dog image 2" />
+              <img src="./images/dog-image-3.jpg" alt="dog image 3" />
+            </div>
+            <p class="sent">Here are a few pictures. She's a happy girl!</p>
+            <p class="sent">Can you make it?</p>
+            <span class="spacer"></span>
+            <p class="received">
+              She looks so happy! The time we discussed works. How long shall I
+              take her out for?
+            </p>
+            <form class="price">
+              <div class="price-form-group">
+                <input type="radio" name="price" id="price-29" />
+                <label for="price-29">30 minute walk <span>$29</span></label>
+              </div>
+              <div class="price-form-group">
+                <input type="radio" name="price" id="price-49" />
+                <label for="price-49">1 hour walk <span>$49</span></label>
+              </div>
+            </form>
+            <form class="new-msg">
+              <div class="new-msg-form-group">
+                <input
+                  type="text"
+                  name="new-msg"
+                  id="new-msg"
+                  class="new-msg-input"
+                  placeholder="Type a message..."
+                />
+                <button type="submit" class="new-msg-submit"></button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </main>
