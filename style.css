@@ -40,6 +40,19 @@ body {
   font-family: var(--font-rubik);
   font-size: 16px;
   overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  width: 65vw;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8em;
+  padding: 2em;
 }
 
 main::before,
@@ -79,8 +92,6 @@ main::after {
   width: 14.76em;
   height: 29.7em;
   background-color: var(--color-white);
-  top: 10.2vw;
-  left: 23.6vw;
   border-radius: 1.8em;
   box-shadow: 0.3em 0.8em 3em -0.8em var(--color-dark-grayish-violet);
   padding: 0.65em;
@@ -228,7 +239,7 @@ main::after {
   align-items: center;
   gap: 0.5em;
   margin-left: auto;
-  margin-bottom: 0.5em; /* TODO */
+  margin-bottom: 0.5em;
 }
 
 .sent-img img {
@@ -381,17 +392,8 @@ input[type="radio"] {
   color: var(--color-grayish-blue);
 }
 
-main {
-  display: flex;
-}
-
 .info {
-  margin-top: auto;
-  margin-left: auto;
-  width: 55vw;
-  padding-left: 2.8em;
-  padding-top: 1.4em;
-  height: 200px;
+  width: 48%;
 }
 
 .title {
@@ -404,15 +406,55 @@ main {
 .desc {
   font-size: 0.98rem;
   color: var(--color-pale-violet);
-  padding-right: 18em;
   line-height: 1.7;
 }
 
-@media screen and (max-width: 1200px) {
-  .desc {
-    padding-right: 10em;
+@media screen and (max-width: 1044px) {
+  main {
+    width: 80vw;
   }
+}
+
+@media screen and (max-width: 848px) {
+  main {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 743px) {
+  main {
+    flex-direction: column;
+    gap: 4em;
+    padding: 3.5em 2em;
+  }
+
+  main::after {
+    bottom: -6em;
+  }
+
   .info {
-    width: 45vw;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 643px) {
+  .info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main::before,
+  main::after {
+    width: 29.8em;
+    height: 29.6em;
+  }
+
+  main::before {
+    left: -18em;
+  }
+
+  main::after {
+    right: -18em;
   }
 }
